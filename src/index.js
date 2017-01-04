@@ -15,4 +15,5 @@ const deviceReadyEvent = new CustomEvent('deviceready');
 
 ready(() => document.dispatchEvent(deviceReadyEvent));
 
+app.setPlatform('android');
 app.init();
