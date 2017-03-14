@@ -15,5 +15,7 @@ const deviceReadyEvent = new CustomEvent('deviceready');
 
 ready(() => document.dispatchEvent(deviceReadyEvent));
 
+/* stub of init admob function */
+
 app.setPlatform('android');
-app.init();
+app.init().exec(() => console.log('callback ok'));
